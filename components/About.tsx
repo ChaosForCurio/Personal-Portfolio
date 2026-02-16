@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const skills = [
-    "NEXT.JS", "TYPESCRIPT", "REACT", "GSAP", "NODE.JS", "GRAPHQL", "WEBGL", "THREE.JS", "AWS", "DESIGN SYSTEMS"
+    "NEXT.JS", "TYPESCRIPT", "REACT", "GSAP", "NODE.JS", "AI INTEGRATION", "WEBGL", "THREE.JS", "FINTECH", "DESIGN SYSTEMS"
 ];
 
 function SkillMarquee({ direction = 1, speed = 20 }: { direction?: number, speed?: number }) {
@@ -94,13 +94,40 @@ export default function About() {
                         <Typography variant="overline" color="secondary">
                             WHO I AM
                         </Typography>
-                        <Typography variant="h2" paragraph sx={{ mt: 2, textTransform: 'none' }}>
-                            A creative developer bridging the gap between design and engineering.
+                        <Box
+                            sx={{
+                                width: '100%',
+                                aspectRatio: '1/1',
+                                borderRadius: 4,
+                                overflow: 'hidden',
+                                mt: 2,
+                                border: '1px solid rgba(255, 82, 0, 0.2)',
+                                position: 'relative'
+                            }}
+                        >
+                            <Box
+                                component="img"
+                                src="/image/my.png"
+                                alt="Anshu Nayak"
+                                sx={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    filter: 'grayscale(0.5) contrast(1.1)',
+                                    '&:hover': {
+                                        filter: 'grayscale(0) contrast(1)',
+                                        transition: 'all 0.5s ease'
+                                    }
+                                }}
+                            />
+                        </Box>
+                        <Typography variant="h2" paragraph sx={{ mt: 4, textTransform: 'none' }}>
+                            A Full Stack Engineer focused on crafting pixel-perfect digital experiences.
                         </Typography>
                     </Grid>
                     <Grid size={{ xs: 12, md: 7 }}>
                         <Typography variant="body1" sx={{ fontSize: '1.5rem', lineHeight: 1.6, opacity: 0.8 }}>
-                            I don't just write code; I craft digital experiences. With a background in both fine arts and computer science, I bring a unique perspective to every project.
+                            I specialize in building things that live on the internet, blending deep technical expertise with a passion for visual excellence.
                         </Typography>
                         <Typography variant="body1" sx={{ mt: 4, fontSize: '1.25rem', lineHeight: 1.6, opacity: 0.6 }}>
                             My work philosophy is simple: It must be fast, functional, and visually unforgettable. I specialize in the React ecosystem, specifically Next.js, and love pushing the boundaries of what is possible on the web using WebGL and GSAP.

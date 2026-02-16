@@ -9,6 +9,22 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
     {
+        title: "XieRiee AI",
+        category: "AI / Cloud",
+        description: "A real-time AI platform featuring multi-modal chat, image generation, and web search integration with SSO authentication.",
+        image: "https://placehold.co/800x600/050505/FF5200/png?text=XieRiee+AI",
+        tags: ["Next.js", "Gemini AI", "TypeScript", "SSO"],
+        link: "https://github.com/ChaosForCurio/XieRiee"
+    },
+    {
+        title: "Finance OS",
+        category: "Fintech / Dashboard",
+        description: "A comprehensive finance management tool with spend analysis, real-time analytics, and privacy-first data protection.",
+        image: "https://placehold.co/800x600/050505/FF5200/png?text=Finance+OS",
+        tags: ["Next.js", "SSO", "Spend Analysis", "Tailwind"],
+        link: "https://github.com/ChaosForCurio/Expense-Tracker"
+    },
+    {
         title: "Koenigsegg Jesko",
         category: "Automotive / WebGL",
         description: "High-fidelity automotive showcase featuring the Jesko Absolut. Immersive scrolling, technical specifications, and parallax visuals.",
@@ -21,24 +37,24 @@ const projects = [
         category: "Fashion / Heritage",
         description: "A digital tribute to the House of Dior. Elegant typography, heritage timeline, and interactive couture gallery.",
         image: "https://placehold.co/800x600/050505/FF5200/png?text=Maison+Dior",
-        tags: ["React", "Framer Motion", "Tailwind"],
+        tags: ["React", "Framer Motion", "GSAP"],
         link: "https://github.com/ChaosForCurio/Christian-Dior-"
     },
     {
-        title: "PlayStation 5 UI",
-        category: "Gaming / Interface",
-        description: "Reimagining the console dashboard for the web. Fluid navigation, game library integration, and immersive soundscapes.",
-        image: "https://placehold.co/800x600/050505/FF5200/png?text=PlayStation+5",
-        tags: ["TypeScript", "Three.js", "CSS Modules"],
-        link: "https://github.com/ChaosForCurio/Playstation"
+        title: "Short.tech",
+        category: "Microservice / Utility",
+        description: "URL shortener microservice for efficient link management, analytics, and custom URL creation with privacy protection.",
+        image: "https://placehold.co/800x600/050505/FF5200/png?text=Short.tech",
+        tags: ["Node.js", "TypeScript", "Microservices"],
+        link: "https://github.com/ChaosForCurio/Url-Shortner"
     },
     {
-        title: "Finance OS",
-        category: "Fintech / Dashboard",
-        description: "Personal finance dashboard with real-time analytics. Dark mode first, data visualization, and budget tracking.",
-        image: "https://placehold.co/800x600/050505/FF5200/png?text=Finance+OS",
-        tags: ["Next.js", "Supabase", "Recharts"],
-        link: "https://github.com/ChaosForCurio/Expense-Tracker"
+        title: "Choice Theory",
+        category: "Game / Social",
+        description: "Conversational 'Would You Rather' game featuring choice modeling, leaderboards, and real-time interaction.",
+        image: "https://placehold.co/800x600/050505/FF5200/png?text=Choice+Theory",
+        tags: ["React", "Logic Design", "Interactive UI"],
+        link: "https://github.com/ChaosForCurio/Would-YOu-Rather"
     }
 ];
 

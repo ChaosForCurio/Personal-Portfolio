@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Container, Typography, TextField, Button } from '@mui/material';
+import { Box, Container, Typography, TextField, Button, Stack } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 
 export default function Contact() {
@@ -21,23 +21,42 @@ export default function Contact() {
                         Have an idea or just want to say hi? I'm always open to discussing new projects and opportunities.
                     </Typography>
 
-                    <Button
-                        variant="contained"
-                        size="large"
-                        sx={{
-                            bgcolor: 'white',
-                            color: 'black',
-                            px: 6,
-                            py: 2,
-                            fontSize: '1.2rem',
-                            '&:hover': {
-                                bgcolor: '#FF5200',
-                                color: 'white'
-                            }
-                        }}
-                    >
-                        Say Hello
-                    </Button>
+                    <Stack direction="row" spacing={3} justifyContent="center" sx={{ mt: 4 }}>
+                        <Button
+                            variant="contained"
+                            size="large"
+                            onClick={() => window.open('https://x.com/bornashofficial', '_blank')}
+                            sx={{
+                                bgcolor: 'white',
+                                color: 'black',
+                                px: 4,
+                                py: 1.5,
+                                '&:hover': {
+                                    bgcolor: '#FF5200',
+                                    color: 'white'
+                                }
+                            }}
+                        >
+                            Say Hello
+                        </Button>
+                        <Button
+                            variant="outlined"
+                            size="large"
+                            onClick={() => window.open('https://x.com/bornashofficial', '_blank')}
+                            sx={{
+                                borderColor: 'rgba(255,255,255,0.3)',
+                                color: 'white',
+                                px: 4,
+                                py: 1.5,
+                                '&:hover': {
+                                    borderColor: '#FF5200',
+                                    color: '#FF5200'
+                                }
+                            }}
+                        >
+                            Twitter / X
+                        </Button>
+                    </Stack>
                 </Box>
             </Container>
         </Box>

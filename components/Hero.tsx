@@ -135,7 +135,8 @@ export default function Hero() {
                             variant="body1"
                             sx={{ mt: 6, maxWidth: '600px', mx: 'auto', opacity: 0.7 }}
                         >
-                            Creating award-winning digital experiences with Next.js & GSAP.
+                            Full Stack Engineer building things that live on the internet,
+                            focusing on pixel-perfect experiences.
                             <br />Based in India. Available for freelance.
                         </Typography>
 
